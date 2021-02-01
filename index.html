@@ -10,7 +10,7 @@
 </head>
 
 <body class="container-fluid p-0 m-0" style="min-height: 100vh;">
-    <header class="sticky-top clearfix">
+    <header class="clearfix">
         <nav id="navItem" class="navbar navbar-light  px-3 bg-primary">
             <a class="navbar-brand text-light" href="#">
                 <div class="d-flex align-items-center">
@@ -40,7 +40,7 @@
                 <div class="card delayshowanimate animate__fadeInUp">
                     <div class="card-body shadow">
                         <div class="row row-cols-auto">
-                            <div class="col-auto">
+                            <div class="col col-sm-auto">
                                 <img src="assets/images/personal_img.jpg" class="rounded-circle p-4" alt="myImage"
                                     width="200px">
                             </div>
@@ -81,7 +81,7 @@
                                 </div>
                                 <div class="ml-2">
                                     <h5 class="h5"><i class="bi bi-chat-left-text pr-2"></i>個人簡介</h5>
-                                    <p>
+                                    <p style="max-width: 700px;">
                                         我是一名愛好聽音樂與攝影的程式設計師，喜歡分享自己的生活。<br>
                                         擅長於WordPress架站應用、影片編輯、在WP架站具有2年的經歷。<br>
                                         除此之外，我也曾經創辦Minecraft地圖團隊Tt Studio，團隊已有約20項地圖作品。<br>
@@ -99,11 +99,11 @@
             <div class="container animate__fadeInUp">
                 <h3 id="myStudy" class="text-primary">個人學歷</h3>
                 <div class="row">
-                    <div class="col-12 col-lg-10 col-md-9 pt-1 overflow-hidden">
+                    <div class="col-12 col-lg-10 col-md-9 overflow-hidden">
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active delayshowanimate animate__animated animate__fadeInUp" id="v-pills-S1" role="tabpanel"
                                 aria-labelledby="v-pills-home-tab">
-                                <div class="card shadow bg-white rounded">
+                                <div class="card mb-4 shadow bg-white rounded">
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col-12 col-sm-6">
@@ -122,7 +122,7 @@
                             </div>
                             <div class="tab-pane fade animate__animated animate__fadeInUp" id="v-pills-S2" role="tabpanel"
                                 aria-labelledby="v-pills-home-tab">
-                                <div class="card shadow bg-white rounded">
+                                <div class="card mb-4 shadow bg-white rounded">
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col-12 col-sm-6">
@@ -141,7 +141,7 @@
                             </div>
                             <div class="tab-pane fade animate__animated animate__fadeInUp" id="v-pills-S3" role="tabpanel"
                                 aria-labelledby="v-pills-home-tab">
-                                <div class="card shadow bg-white rounded">
+                                <div class="card mb-4 shadow bg-white rounded">
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col-12 col-sm-6">
@@ -160,7 +160,7 @@
                             </div>
                             <div class="tab-pane fade animate__animated animate__fadeInUp" id="v-pills-S4" role="tabpanel"
                                 aria-labelledby="v-pills-home-tab">
-                                <div class="card shadow bg-white rounded">
+                                <div class="card  mb-4 shadow bg-white rounded">
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col-12 col-sm-6">
@@ -179,7 +179,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-2 col-md-3 pt-1">
+                    <div class="col-12 col-lg-2 col-md-3 pb-3">
                         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
                             aria-orientation="vertical">
                             <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-S1"
@@ -199,7 +199,7 @@
             <div class="container">
                 <h3 id="myExperience" class="text-primary">個人經驗「工作與開發」</h3>
                 <div class="row">
-                    <div class="col-12 col-lg-10 col-md-9 overflow-hidden">
+                    <div class="col-12 col-lg-10 col-md-9 pb-3 overflow-hidden">
                         <div class="tab-content" id="v-pills-tabContent">
                             <!--工作-->
                             <div class="tab-pane fade" id="expWork" role="tabpanel"
@@ -269,7 +269,7 @@
 
                             <!--產品DEV-->
                             <div class="tab-pane fade show active" id="expCode" role="tabpanel" aria-labelledby="expCode">
-                                <div class="card rounded shadow my-2 delayshowanimate  animate__animated animate__fadeInRight d-none" id="product01">
+                                <div class="card rounded shadow my-2 animate__animated animate__fadeInRight d-none" id="product01">
                                     <div class="card-body clearfix row">
                                         <div class="col-12 col-md-6">
                                             <img src="assets/images/product-techjoy.png" width="100%">
@@ -687,7 +687,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-2 col-md-3">
+                    <div class="col-12 col-lg-2 col-md-3 pb-3">
                         <div class="">
                             <div class="nav  nav-pills" id="v-pills-tab" role="tablist">
                                 <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#expWork"
@@ -747,6 +747,13 @@
                                 class="p-3 rounded">
                         </a>
                         <p class="text-center">傳單設計</p>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 delayshowanimate animate__flipInX">
+                        <a>
+                            <img src="assets/images/learned/webdesign.jpg" alt="DaVinci Resolve" width="100%"
+                                class="p-3 rounded">
+                        </a>
+                        <p class="text-center">網頁設計</p>
                     </div>
                 </div>
             </div>
