@@ -76,16 +76,21 @@ $dark:          $gray-800 !default;
 $theme-colors: () !default;
 $theme-colors: map-merge(
   (
-    "primary":  #6C6A2D,
-    "secondary":  $secondary,
-    "success":    $success,
-    "info":       $info,
-    "warning":    $warning,
-    "danger":     $danger,
-    "light":      $light,
-    "dark":       $dark,
-    "lightpink":#FEEEEC,
-    "lighttea": #F7F7DA
+    "primary":      #6C6A2D,
+    "secondary":      $secondary,
+    "success":        $success,
+    "info":           $info,
+    "warning":        $warning,
+    "danger":         $danger,
+    "light":          $light,
+    "dark":           $dark,
+    "lightpink":    #FEEEEC,
+    "lighttea":     #F7F7DA,
+    "SkyHeavyBlue": #465375,
+    "SkyBlue":      #959bbd,
+    "SkyLightBlue": #c0d3e4,
+    "SkyBgBlue":    #eff4f8,
+    "SkyAlertPink": #f3dbe9
   ),
   $theme-colors
 );
