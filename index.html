@@ -12,6 +12,23 @@
         .btn {
             -webkit-appearance:none;
         }
+        .ml12 {
+            font-weight: 200;
+            font-size: 1.8em;
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+        }
+        .ml12 .letter {
+            display: inline-block;
+            line-height: 0.5em;
+        }
+        .round25p {
+            border-radius: 25px;
+        }
+        .p-half {
+            height: 150px;
+            overflow: auto;
+        }
     </style>
 </head>
 
@@ -44,9 +61,9 @@
     <section>
         <div class="py-3 bg-SkyLightBlue">
             <div class="container">
-                <h3 id="basicInfo" class="text-primary delayshowanimate animate__fadeInUp d-none">基本資料</h3>
-                <div class="card delayshowanimate animate__fadeInUp">
-                    <div class="card-body shadow">
+                <h3 id="basicInfo" class="d-none"></h3>
+                <div class="card round25p  delayshowanimate animate__fadeInUp">
+                    <div class="card-body round25p  shadow">
                         <div class="row row-cols-auto justify-content-center">
                             <div class="col-12 col-md-auto">
                                 <img src="assets/images/personal_img.jpg" class="rounded-circle p-4 d-flex mx-auto" alt="myImage"
@@ -212,12 +229,12 @@
         -->
         <div class="py-3 bg-SkyBgBlue">
             <div class="container">
-                <h3 id="myExperience" class="text-SkyHeavyBlue font-weight-bold">個人經驗「工作與開發」</h3>
+                <h3 id="myExperience" class="text-SkyHeavyBlue font-weight-bold ml12 p-1">個人經驗「工作與開發」</h3>
                 <div class="row">
                     <div class="col-12 col-lg-10 col-md-9 pb-3 overflow-hidden">
                         <div class="tab-content" id="v-pills-tabContent">
                             <!--工作-->
-                            <div class="tab-pane fade" id="expWork" role="tabpanel"
+                            <div class="tab-pane fade round25p" id="expWork" role="tabpanel"
                                 aria-labelledby="expWork">
                                 <div class="card rounded shadow my-2 animate__animated animate__fadeInRight"
                                     id="work01">
@@ -228,7 +245,8 @@
                                         <div class="col-12 col-md-6">
                                             <div class="align-items-stretch">
                                                 <p class="h3">童玩節 VR 館打工</p>
-                                                <p>工作內容：駐點服務、機器維修與保養、秩序引導。<br>因為暑期往往有特別多時間，所以閒來無事就去童玩節的科技館打工，剛好分配到 VR
+                                                <p class="p-half">
+                                                    工作內容：駐點服務、機器維修與保養、秩序引導。<br>因為暑期往往有特別多時間，所以閒來無事就去童玩節的科技館打工，剛好分配到 VR
                                                     館的部分，在工作中我實際了解到如何服務客人與機械故障排除，還有在機器上放乖乖以求機械不故障。</p>
                                             </div>
                                             <div class="">
@@ -257,7 +275,7 @@
                                         <div class="col-12 col-md-6">
                                             <div class="align-items-stretch">
                                                 <p class="h3">宜蘭縣服務處員工</p>
-                                                <p>工作內容：駐點服務、秩序引導、文書處理、場地攝影。<br>
+                                                <p class="p-half">工作內容：駐點服務、秩序引導、文書處理、場地攝影。<br>
                                                     在工作中，我培養更多服務能力，以及靈機應變的能力。在繁雜的公事中，利用多人合作與SOP處理，增加事務處理效率。
                                                 </p>
                                             </div>
@@ -293,7 +311,7 @@
                                             <div class="align-items-stretch">
                                                 <p class="h3">WordPress 自架站 - Techjoy</p>
                                                 <p class="h5">始於2015，終於2018 <span class="badge badge-secondary">已關閉專案</span></p>
-                                                <p>
+                                                <p class="p-half">
                                                     約高中時期創立2個網站，分別為「Tecjoy 樂享科技」，「mcblog」，目的為了為產品進行體驗分享與推廣Minecraft 遊戲創作，當時伺服器採用 Red Hat 的OpenShift 方案與 Byethost Free 方案，但後來因課業壓力與營運成本，於16年關閉 Tecjoy，於18年正式放棄mcblog營運工作，但後期仍有參與其他網站營運如：123電影院等。
                                                 </p>
                                             </div>
@@ -323,7 +341,7 @@
                                             <div class="align-items-stretch">
                                                 <p class="h3">Minecraft 地圖 Maker 4年 約50項作品</p>
                                                 <p class="h5">始於2014，終於2018 <span class="badge badge-secondary">已關閉專案</span></p>
-                                                <p>
+                                                <p class="p-half">
                                                     起源於一群愛玩此遊戲的同好，因希望開拓更多玩法，於是投入創造的行列，活躍於MCPE社群，經營一小段時間後，作品日漸豐富，也有許多不同的類型，為了宣傳更多作品，於是成立了
                                                     Tt Team 團隊進行宣傳、測試，在此期間習得 WordPress 架設、網域的相關設置、 Adobe Premiere
                                                     剪輯，最後因維護成本問題於2018年4月正式關停所有網站、服務、宣傳作業，也停止
@@ -356,23 +374,21 @@
                                             <div class="align-items-stretch">
                                                 <p class="h3">華新雲會議管理系統</p>
                                                 <p class="h5">始於2020/09，終於2021/01 <span class="badge badge-secondary">已關閉專案</span></p>
-                                                <p>
-                                                    <div class="p-0 m-0 my-2">
-                                                        <a href="https://github.com/tony13382/2020SA_MeetManagement"
-                                                            type="button"
-                                                            target="_blank"
-                                                            class="btn rounded-pill btn-outline-dark d-inline-flex my-1
+                                                <div class="p-0 m-0 my-2">
+                                                    <a href="https://github.com/tony13382/2020SA_MeetManagement"
+                                                        type="button" target="_blank" class="btn rounded-pill btn-outline-dark d-inline-flex my-1
                                                             align-items-center">
-                                                            <i class="bi bi-github mr-1"></i>
-                                                            Github 連結
-                                                        </a>
-                                                        <a href="https://drive.google.com/file/d/1AuNQMLqJMxEgpKyXGr7uzTacUXTxtfax/view?usp=sharing"
-                                                            type="button" target="_blank" class="btn rounded-pill btn-outline-dark d-inline-flex my-1
+                                                        <i class="bi bi-github mr-1"></i>
+                                                        Github 連結
+                                                    </a>
+                                                    <a href="https://drive.google.com/file/d/1AuNQMLqJMxEgpKyXGr7uzTacUXTxtfax/view?usp=sharing"
+                                                        type="button" target="_blank" class="btn rounded-pill btn-outline-dark d-inline-flex my-1
                                                             align-items-center">
-                                                            <i class="bi bi-book-half mr-1"></i>
-                                                            專案文件
-                                                        </a>
-                                                    </div>
+                                                        <i class="bi bi-book-half mr-1"></i>
+                                                        專案文件
+                                                    </a>
+                                                </div>
+                                                <p class="p-half">
                                                     大學系統分析專案，利用 mongodb 與 jisti 提供使用者線上開會與開會管理的解決方案，除了基本網頁通知，也串接了信箱系統，以確保用戶信息不漏接。
                                                 </p>
                                             </div>
@@ -402,10 +418,9 @@
                                             <div class="align-items-stretch">
                                                 <p class="h3">華新 VMI 庫存管理遊戲</p>
                                                 <p class="h5">@2020/10 <span class="badge badge-danger">暫停維護中</span></p>
-                                                <p>
                                                 <div class="p-0 m-0 my-2">
-                                                    <a href="https://github.com/tony13382/2020SA_VMI"
-                                                        type="button" target="_blank" class="btn rounded-pill btn-outline-dark d-inline-flex
+                                                    <a href="https://github.com/tony13382/2020SA_VMI" type="button"
+                                                        target="_blank" class="btn rounded-pill btn-outline-dark d-inline-flex
                                                             align-items-center my-1">
                                                         <i class="bi bi-github mr-1"></i>
                                                         Github 連結
@@ -417,7 +432,8 @@
                                                         教學手冊
                                                     </a>
                                                 </div>
-                                                大學系統分析專案，輸入資料來看練習銷售策略吧！
+                                                <p class="p-half" >
+                                                    大學系統分析專案，輸入資料來看練習銷售策略吧！
                                                 </p>
                                             </div>
                                             <div class="">
@@ -446,7 +462,6 @@
                                             <div class="align-items-stretch">
                                                 <p class="h3">MeowLu Stock - 股票試算小工具</p>
                                                 <p class="h5">@2020/10 <span class="badge badge-success">專案持續維護中</span></p>
-                                                <p>
                                                 <div class="p-0 m-0 my-2">
                                                     <a href="https://github.com/tony13382/fgstockcal" type="button"
                                                         target="_blank" class="btn rounded-pill btn-outline-dark d-inline-flex
@@ -454,13 +469,14 @@
                                                         <i class="bi bi-github mr-1"></i>
                                                         Github 連結
                                                     </a>
-                                                    <a href="https://tony13382.github.io/fgstockcal/"
-                                                        type="button" target="_blank" class="btn rounded-pill btn-outline-dark d-inline-flex
+                                                    <a href="https://tony13382.github.io/fgstockcal/" type="button"
+                                                        target="_blank" class="btn rounded-pill btn-outline-dark d-inline-flex
                                                             align-items-center my-1">
                                                         <i class="bi bi-box-arrow-up-right mr-1"></i>
                                                         網頁連結
                                                     </a>
                                                 </div>
+                                                <p class="p-half">
                                                 提供股票交易款計算小工具，也能依據設定漲跌幅度來計算期望股價。適合作為新手小白的工具。
                                                 </p>
                                             </div>
@@ -644,15 +660,19 @@
                                                 </ol>
                                                 <div class="carousel-inner">
                                                     <div class="carousel-item active">
-                                                        <img src="assets/images/design01/index.png"
+                                                        <img src="assets/images/design03/index.png"
                                                             class="d-block w-100" alt="...">
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <img src="assets/images/design01/info.png" class="d-block w-100"
+                                                        <img src="assets/images/design03/workspace.png" class="d-block w-100"
                                                             alt="...">
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <img src="assets/images/design01/profile.png"
+                                                        <img src="assets/images/design03/addTab.png"
+                                                            class="d-block w-100" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/design03/musicWall.png"
                                                             class="d-block w-100" alt="...">
                                                     </div>
                                                 </div>
@@ -668,12 +688,12 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-8 d-none">
+                                        <div class="col-12 col-md-8">
                                             <div class="align-items-stretch">
-                                                <p class="h3">食材外送專家 - Foodome</p>
+                                                <p class="h3">Songla 音樂智慧創作小幫手</p>
                                                 <p>
-                                                <div class="p-0 m-0 my-2">
-                                                    <a href="https://www.figma.com/proto/5cHIjh7jgfmHkaxREPKY3D/2020-%E8%A1%8C%E9%8A%B7%E7%AE%A1%E7%90%86-Foodome-Prototype?node-id=4%3A288&scaling=min-zoom"
+                                                <div class="p-0 m-0 my-2 d-none">
+                                                    <a href="#"
                                                         type="button" target="_blank" class="btn rounded-pill btn-outline-dark d-inline-flex
                                                             align-items-center">
                                                         <i class="bi bi-laptop-fill mr-1"></i>
@@ -724,7 +744,7 @@
         </div>
         <div class="py-3 bg-SkyLightBlue">
             <div class="container">
-                <h3 id="myResearch" class="text-SkyHeavyBlue font-weight-bold animate__animated animate__fadeInUp">研究領域</h3>
+                <h3 id="myResearch" class="text-SkyHeavyBlue font-weight-bold ml12">研究領域</h3>
                 <div class="row align-items-center">
                     <div class="col-md-6 col-12">
                         <img src="assets/images/ResearchBg/JavaScript frameworks-pana.svg" alt="">
@@ -770,57 +790,6 @@
                     </div>
                 </div>
                 
-                <!--<div class="row">
-                    <div class="col-6 col-md-4 col-lg-3 delayshowanimate animate__flipInX">
-                        <a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank">
-                            <img src="assets/images/learned/davinci.jpg" alt="DaVinci Resolve" width="100%"
-                                class="p-3 rounded">
-                        </a>
-                        <p class="text-center">DaVinci Resolve</p>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 delayshowanimate animate__flipInX">
-                        <a href="https://www.notion.so/?utm_source=google&utm_campaign=2075789713&utm_medium=80211061801&utm_content=372709093351&utm_term=notion&targetid=kwd-312974742&gclid=EAIaIQobChMIqPiB57vG7gIVED5gCh1iqwfIEAAYASAAEgL47PD_BwE"
-                            target="_blank">
-                            <img src="assets/images/learned/notion.jpg" alt="DaVinci Resolve" width="100%" class="p-3 rounded">
-                        </a>
-                        <p class="text-center">Notion 管理</p>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 delayshowanimate animate__flipInX">
-                        <a href="https://developer.android.com/studio" target="_blank">
-                            <img src="assets/images/learned/Android_Studio.jpg" alt="DaVinci Resolve" width="100%"
-                                class="p-3 rounded">
-                        </a>
-                        <p class="text-center">Android Studio 開發</p>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 delayshowanimate animate__flipInX">
-                        <a href="https://tw.wordpress.org/" target="_blank">
-                            <img src="assets/images/learned/wordpress.jpg" alt="DaVinci Resolve" width="100%"
-                                class="p-3 rounded">
-                        </a>
-                        <p class="text-center">Wordpress 應用</p>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 delayshowanimate animate__flipInX">
-                        <a href="https://www.figma.com/" target="_blank">
-                            <img src="assets/images/learned/figma.jpg" alt="DaVinci Resolve" width="100%"
-                                class="p-3 rounded">
-                        </a>
-                        <p class="text-center">Figma UI/UX 設計</p>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 delayshowanimate animate__flipInX">
-                        <a>
-                            <img src="assets/images/learned/faltpaper.jpg" alt="DaVinci Resolve" width="100%"
-                                class="p-3 rounded">
-                        </a>
-                        <p class="text-center">傳單設計</p>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3 delayshowanimate animate__flipInX">
-                        <a>
-                            <img src="assets/images/learned/webdesign.jpg" alt="DaVinci Resolve" width="100%"
-                                class="p-3 rounded">
-                        </a>
-                        <p class="text-center">網頁設計</p>
-                    </div>
-                </div>-->
             </div>
             
         </div>
@@ -844,7 +813,7 @@
                 frameArray = ['product01', 'product02','product03','product04','product05']
             }
             if (db === "design") {
-                frameArray = ['design01', 'design02']
+                frameArray = ['design01', 'design02', 'design03']
             }
             frameArrayLength = frameArray.length
             for (let index = 0; index < frameArray.length; index++) {
@@ -878,8 +847,7 @@
         }
     </script>
     
-    <script language="javascript" type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>
         var wow = new WOW(
             {
@@ -896,7 +864,24 @@
         );
         wow.init();
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml12');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
+        anime.timeline({loop: false})
+        .add({
+            targets: '.ml12 .letter',
+            translateX: [40,0],
+            translateZ: 0,
+            opacity: [0,1],
+            easing: "easeOutExpo",
+            duration: 1200,
+            delay: (el, i) => 500 + 30 * i
+        })
+    </script>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
