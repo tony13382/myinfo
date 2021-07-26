@@ -12,3 +12,46 @@
 .social-icon:hover {
     fill: #f4f4f4;
 }
+.msf-h1{
+    font-size: 36px;
+}
+.msf-sh1{
+    font-size: 24px;
+    line-height: 150%;
+}
+.productBlock {
+    margin-left: 0px !important;
+    margin-right: 8px !important;
+}
+
+.phoneRadius {
+    border-radius: 16px;
+    overflow: hidden;
+}
+.msf-info-s{
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.ml12 {
+    font-weight: 200;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.ml12 .letter {
+    display: inline-block;
+    line-height: 0.5em;
+}
+
+.msf-heightlight {
+    border-left: 2px solid black;
+    padding-left: 8px;
+}
+
+.msf-heightlight-w {
+    border-left: 2px solid white;
+    padding-left: 8px;
+}
+
