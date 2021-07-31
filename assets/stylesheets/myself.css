@@ -32,6 +32,11 @@
     font-size: 18px;
     line-height: 150%;
 }
+.msf-uiuxHeader{
+     background: linear-gradient(90deg, #465375 0%, #758AC2 100%); 
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
 
 .ml12 {
     font-weight: 200;
