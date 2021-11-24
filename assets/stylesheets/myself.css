@@ -13,10 +13,10 @@
     fill: #f4f4f4;
 }
 .msf-h1{
-    font-size: 36px;
+    font-size: 3rem;
 }
 .msf-sh1{
-    font-size: 24px;
+    font-size: 2rem;
     line-height: 150%;
 }
 .productBlock {
@@ -60,3 +60,57 @@
     padding-left: 8px;
 }
 
+.notoFont {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.msNotiWord {
+    font-size: 5rem;
+}
+.btn {
+    -webkit-appearance: none;
+}
+
+.round25p {
+    border-radius: 25px !important;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin: 0px 0 8px 0;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 4px;
+    border-radius: 8px;
+    background: rgb(219, 219, 219);
+}
+
+.modal-dialog {
+    max-width: 1080px;
+}
+
+.modal-body {
+    height: 76vh;
+    overflow: auto;
+}
+
+.expPage .nav-pills .active {
+    background-color: #959bbd;
+}
+.bg-skyHeavyBlue {
+    background-color:#465375 !important;
+}
+.text-skyHeavyBlue {
+    color: #465375 !important;
+}
+.hoverShadow:hover{ 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
