@@ -149,7 +149,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="py-4">
+	<div class="py-4" style="background-color: #FEDFE1;">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 notoFont">
@@ -157,25 +157,25 @@
 				</div>
 			</div>
 			<div class="row my-4">
-				<div class="col-12 col-md-4 p-2 notoFont ">
+				<div class="col-12 col-md-4 p-2 notoFont" onclick="activeSelectFunc(1)">
 					<div class="card">
-						<div class="card-body">
+						<div class="card-body border-bottom border-success border-4 " id="selectFunc1">
 							<p class="m-0 fs-1 text-success"><i class="fas fa-calculator"></i></p>
 							<p class="m-0 fs-4">試算交易手續費</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-4 p-2 notoFont">
+				<div class="col-12 col-md-4 p-2 notoFont" onclick="activeSelectFunc(2)">
 					<div class="card">
-						<div class="card-body">
+						<div class="card-body" id="selectFunc2">
 							<p class="m-0 fs-1 text-danger"><i class="fas fa-dollar-sign"></i></p>
 							<p class="m-0 fs-4">預估漲跌目標股價</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-4 p-2 notoFont">
+				<div class="col-12 col-md-4 p-2 notoFont" onclick="activeSelectFunc(3)">
 					<div class="card">
-						<div class="card-body">
+						<div class="card-body" id="selectFunc3">
 							<p class="m-0 fs-1 text-warning"><i class="fas fa-plus"></i></p>
 							<p class="m-0 fs-4">簡易加減計算</p>
 						</div>
@@ -187,18 +187,45 @@
 	<div style="background-color: #FEDFE1;" class="py-4" id="funcArea">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 d-flex align-items-center justify-content-center">
+				<div class="col-12 d-flex align-items-center justify-content-center" id="selectFuncShow1">
 					<img src="../../assets/imgs/meowluStockCalc/priceCalc.png" class="img-fluid rounded mb-2" alt="...">
 				</div>
-				<div class="col-12 d-flex align-items-center justify-content-center">
+				<div class="col-12 d-flex align-items-center justify-content-center d-none" id="selectFuncShow2">
 					<img src="../../assets/imgs/meowluStockCalc/trendCalc.png" class="img-fluid rounded mb-2" alt="...">
 				</div>
-				<div class="col-12 d-flex align-items-center justify-content-center">
+				<div class="col-12 d-flex align-items-center justify-content-center d-none" id="selectFuncShow3">
 					<img src="../../assets/imgs/meowluStockCalc/quickCalc.png" class="img-fluid rounded mb-2" alt="...">
 				</div>
 			</div>
 		</div>
 	</div>
+	<script>
+		function activeSelectFunc(a) {
+			for(let i =1;i<=3;i++){
+				let removeList = ["border-bottom","border-4","border-success","border-danger","border-warning"];
+				document.getElementById("selectFunc"+i).classList.remove(...removeList);
+				removeList = ["d-none"];
+				document.getElementById("selectFuncShow"+i).classList.add(...removeList);
+			}
+			let btnIdName = "selectFunc" + a;
+			let btnShowDiv = document.getElementById(btnIdName)
+			let showtIdName = "selectFuncShow" + a;
+			let showDiv = document.getElementById(showtIdName);
+			let addBtnClass = ["border-bottom","border-4"];
+			if (a==1) {
+				addBtnClass.push("border-success");
+			}
+			else if (a==2) {
+				addBtnClass.push("border-danger");
+			}
+			else if (a==3) {
+				addBtnClass.push("border-warning");
+			}
+			else{}
+			btnShowDiv.classList.add(...addBtnClass);
+			showDiv.classList.remove("d-none");
+		}
+	</script>
 	<footer class="bg-skyHeavyBlue text-center text-light py-3">
 		<p class="text-lightpink">
 			Copyright © 2021 LU LIANG CHIN 版權所有
