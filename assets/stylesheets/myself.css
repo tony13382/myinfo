@@ -117,3 +117,6 @@
 .ms-fixColor-primary:hover {
     color: white !important ;
 }
+.toTopBtn {
+    transition: opacity 2s;
+}
