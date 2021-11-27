@@ -120,9 +120,3 @@
 .toTopBtn {
     transition: opacity 2s;
 }
-.materialNav .nav .active{
-    background: #FFFFFF;
-    box-shadow: inset 0px -4px 0px #D48806;
-    color: #D48806 !important;
-    font-weight: bold;
-}
