@@ -124,3 +124,6 @@
     margin-top: -5rem;
     padding-top: 5rem;
 }
+.halfHightLightBg{
+    background: linear-gradient(to top, #f4f6ee 50%, transparent 50%);
+}
